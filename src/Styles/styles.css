@@ -1,0 +1,367 @@
+body {
+  background-color: #042344;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #042344;
+}
+
+.login-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 350px;
+  margin: 0 15px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #042344;
+  font-size: 1.5rem;
+}
+
+.password-input {
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input input {
+  width: 100%;
+  padding: 0.8rem;
+  padding-right: 40px;
+  border: 2px solid #e1e1e1;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.password-input input:focus {
+  outline: none;
+  border-color: #042344;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+  color: #042344;
+}
+
+.toggle-password:focus {
+  outline: none;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #042344;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #031829;
+}
+
+.login-button:active {
+  transform: translateY(1px);
+}
+
+.Lotty {
+  width: 50%;
+  height: 600px;
+  position: absolute;
+  z-index: -10;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 800px;
+  margin-top: 5%;
+}
+
+.page-container {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  width: 800px;
+  justify-content: center;
+}
+
+.content-container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 750px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  flex: 1;
+}
+
+.button {
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.commands {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: #333;
+  word-break: break-word;
+}
+
+.command-text {
+  margin: 10px 0;
+  white-space: pre-line;
+}
+
+/* .app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+} */
+
+.home-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.app-title {
+  margin-bottom: 20px;
+}
+
+.nav-buttons button {
+  cursor: pointer;
+}
+.nav-button {
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.nav-button-primary {
+  background-color: #007bff;
+}
+
+.nav-button-success {
+  background-color: #28a745;
+}
+
+.nav-button-warning {
+  background-color: #ffc107;
+}
+
+/* Nuevas clases para el componente Inscripciones */
+.inscripciones-container {
+  width: 100%;
+}
+
+.inscripciones-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px rgb(255, 255, 255);
+}
+
+.inscripciones-content .inscripciones-buttons-main {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.inscripciones-content .inscripciones-buttons-main button {
+  flex: 1;
+}
+
+.inscripciones-title {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.inscripciones-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.inscripciones-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.inscripciones-divider {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.inscripciones-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.inscripciones-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.inscripciones-buttons button {
+  flex: 1;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn btn-secondary {
+  background-color: #dc4646;
+}
+
+.btn-black {
+  background-color: #042344;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #a71d2a;
+}
+
+.btn-success {
+  background-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.command-output {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: #333;
+  word-break: break-word;
+}
+
+.command-text {
+  margin: 10px 0;
+  white-space: pre-line;
+}
